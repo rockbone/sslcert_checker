@@ -15,6 +15,11 @@ SSL certificate check by Perl
         --no-header             Output without header.
         --help                  Print help information.
 
+- Output
+
+    TAB separated text.
+    [domain common_name ssl_version issuer subject subject_name issuer_name not_before not_after]
+
 # LICENSE
 
 Copyright (C) Tooru Tsurukawa.
