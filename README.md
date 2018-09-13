@@ -1,5 +1,10 @@
 # sslcert_checker
 
+## SYNOPSIS
+
+    $ echo -n imap.gmail.com|./sslcert_checker.pl --peer-port=993 --timeout=3 --localtime --no-header
+    imap.gmail.com	imap.gmail.com	TLSv1_2	/C=US/O=Google Trust Services/CN=Google Internet Authority G3	/C=US/ST=California/L=Mountain View/O=Google LLC/CN=imap.gmail.com	2018-08-21 17:05:37	2018-11-13 17:05:00
+
 ## DESCRIPTION
 
 SSL certificate check by Perl
