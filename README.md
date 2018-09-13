@@ -20,7 +20,7 @@ SSL certificate check by Perl
 - Output
 
     TAB separated text.
-    [domain common_name ssl_version issuer subject subject_name issuer_name not_before not_after]
+    [domain common_name ssl_version subject issuer not_before not_after]
 
 # LICENSE
 

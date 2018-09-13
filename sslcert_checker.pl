@@ -24,7 +24,7 @@ GetOptions(\my %opt, qw/
 usage() if $opt{help};
 
 if (!$opt{"no-header"}) {
-    print join("\t", qw/domain common_name ssl_version subject issuer subject_name issuer_name not_before not_after/) . "\n";
+    print join("\t", qw/domain common_name ssl_version subject issuer not_before not_after/) . "\n";
 }
 
 while (<>) {
@@ -58,7 +58,7 @@ while (<>) {
             $i{$key} = Time::Piece->strptime($i{$key}, '%Y-%m-%dT%H:%M:%SZ')->strftime('%Y-%m-%d %H:%M:%S');
         }
     }
-    print join("\t", @i{qw/domain common_name ssl_version issuer subject subject_name issuer_name not_before not_after/}) . "\n";
+    print join("\t", @i{qw/domain common_name ssl_version issuer subject not_before not_after/}) . "\n";
 }
 
 sub usage {
