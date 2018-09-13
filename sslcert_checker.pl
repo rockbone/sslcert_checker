@@ -13,7 +13,7 @@ use constant {
 };
 
 GetOptions(\my %opt, qw/
-    peer_port=i
+    peer-port=i
     timeout=i
     localtime
     no-header
