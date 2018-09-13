@@ -6,7 +6,9 @@ SSL certificate check by Perl
 
 ## USAGE
 
-    sslcert_checker.pl --peer-port=995 --timeout=3 --localtime --no-check-certificate --no-header
+    sslcert_checker.pl --peer-port=995 --timeout=3 --localtime --no-check-certificate --no-header DOMAIN_LIST.txt
+    
+        DOMAIN_LIST.txt         Plain text file. Domain list separated by line break.(You can also input into STDIN.)
     
         --peer-port             peer port.(default: 443)
         --timeout               timeout sec.(default: 3)
